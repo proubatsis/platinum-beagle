@@ -2,7 +2,6 @@
 module Main where
 
 import SDL
-import Lib
 
 main :: IO ()
 main = do
