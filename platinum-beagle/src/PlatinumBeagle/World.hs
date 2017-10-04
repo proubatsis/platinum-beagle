@@ -12,4 +12,4 @@ module PlatinumBeagle.World (createWorld) where
 
     instance Entity World where
         update (w, a) = (w, [])
-        render w = DrawLine (0, 0) (100, 100)
+        render w = SetColor (255, 0, 0, 255) $ DrawLine (0, 0) (100, 100)

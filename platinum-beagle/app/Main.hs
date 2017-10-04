@@ -24,7 +24,6 @@ appLoop renderer = do
 
     rendererDrawColor renderer $= V4 0 0 255 255
     clear renderer
-    rendererDrawColor renderer $= V4 0 0 0 255
     GSR.render renderer $ GE.render $ PBW.createWorld "Hello"
     present renderer
 
