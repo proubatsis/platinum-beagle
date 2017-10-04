@@ -1,4 +1,4 @@
-module Game.Entity where
+module Game.Entity (Entity(..)) where
     import Game.Renderable
 
     class Entity a where

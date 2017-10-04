@@ -2,6 +2,9 @@
 module Main where
 
 import SDL
+import qualified Game.SDL.Renderer as GSR
+import qualified PlatinumBeagle.World as PBW
+import qualified Game.Entity as GE
 
 main :: IO ()
 main = do
@@ -21,6 +24,8 @@ appLoop renderer = do
 
     rendererDrawColor renderer $= V4 0 0 255 255
     clear renderer
+    rendererDrawColor renderer $= V4 0 0 0 255
+    GSR.render renderer $ GE.render $ PBW.createWorld "Hello"
     present renderer
 
     if not qPressed

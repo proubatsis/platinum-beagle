@@ -14,7 +14,12 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     PlatinumBeagle.World
+                       , PlatinumBeagle.Action
+                       , Game.SDL.Renderer
+                       , Game.Entity
+                       , Game.Renderable
   build-depends:       base >= 4.7 && < 5
+                       , sdl2
   default-language:    Haskell2010
 
 executable platinum-beagle-exe
